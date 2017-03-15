@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">seeplusUI</string>
+    <string name="en">EN</string>
+    <string name="cn">CN</string>
+    <string name="qr">QR</string>
+    <string name="translate">TRANSLATE</string>
+    <string name="image">IMAGE</string>
+</resources>

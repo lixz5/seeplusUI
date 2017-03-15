@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.lenovo.seeplusui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/enText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en" />
+
+        <CheckBox
+            android:id="@+id/languageCheckBox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/check_language_state"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/cnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cn" />
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/lightingCheckBox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/check_lighting_state"
+        android:button="@null" />
+
+    <RadioGroup
+        android:id="@+id/switchRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/qrButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="@string/qr"
+            android:gravity="center"
+            android:background="@drawable/check_background_state"
+            />
+        <RadioButton
+            android:id="@+id/translateButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/check_background_state"
+            android:checked="true"
+            android:button="@null"
+            android:text="@string/translate"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="@string/image"
+            android:gravity="center"
+            android:background="@drawable/check_background_state"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/img_result"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="25dp"
+        android:id="@+id/resultText" />
+
+</RelativeLayout>

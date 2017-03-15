@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_checked="true"
+        android:drawable="@mipmap/ic_switch_n" />&lt;!&ndash;选中时效果&ndash;&gt;
+    <item android:state_checked="false"
+        android:drawable="@mipmap/ic_switch_p" />&lt;!&ndash;未选中时效果&ndash;&gt;
+    &lt;!&ndash; 修改成你自己的图片就可以了 &ndash;&gt;-->
+
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@mipmap/ic_switch_p" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@mipmap/ic_switch_p" />
+    <item android:state_focused="true" android:drawable="@mipmap/ic_switch_p" />
+    <item android:state_focused="false" android:drawable="@mipmap/ic_switch_n" />
+</selector>
